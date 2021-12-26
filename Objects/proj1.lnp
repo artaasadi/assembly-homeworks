@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+".\objects\test_code.o"
+".\objects\code1.o"
+".\objects\code2.o"
+".\objects\code3.o"
+".\objects\code4.o"
+".\objects\code5.o"
+".\objects\code6.o"
+".\objects\startup_sam3xa.o"
+".\objects\system_sam3xa.o"
+--strict --scatter ".\Objects\proj1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\proj1.map" -o .\Objects\proj1.axf
